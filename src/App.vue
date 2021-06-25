@@ -1,14 +1,15 @@
 <template>
-  <Main msg="Welcome to Your Vue.js App"/>
+  <MainPage/>
 </template>
 
 <script>
-import Main from './components/Main.vue'
+
+import MainPage from './components/MainPage.vue'
 
 export default {
   name: 'App',
   components: {
-    Main
+    MainPage
   }
 }
 </script>
@@ -22,4 +23,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>

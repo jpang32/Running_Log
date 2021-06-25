@@ -1,41 +1,38 @@
 <template>
-    <div>
-        <Card/>
-        <Card/>
-    </div>
+  <div>
+    <FeedScroll></FeedScroll>
+    <FeedFilter></FeedFilter>
+  </div>
 </template>
   
-  <script>
+<script>
   
-    import Card from './Card.vue'
-  
-    export default {
-      name: 'Main',
-      components: {
-        Card
-      },
-      props: {
-        msg: String
-      }
+  import FeedFilter from './FeedFilter.vue'
+  import FeedScroll from './FeedScroll.vue'
+    
+  export default {
+    name: 'Main',
+    components: {
+      FeedFilter,
+      FeedScroll
+    },
+    props: {
+      msg: String
     }
+  }
+
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+  .container {
+  width: 500px;
+  height: 300px;
+  border: 6px solid rgb(216, 214, 214);
+  border-radius:25px;
+  background-color: rgb(216, 216, 214);
+}
+
   
-  </script>
   
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
-  <style scoped>
-  h3 {
-    margin: 40px 0 0;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  a {
-    color: #42b983;
-  }
-  
-  </style>
+</style>
