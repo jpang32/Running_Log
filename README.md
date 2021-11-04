@@ -1,4 +1,4 @@
-# encryptionproj
+# Running Log
 
 ## Project setup
 ```
